@@ -48,7 +48,7 @@ export class InMemoryLivroRepository implements LivroRepository {
       atual.id?.equals(livro.id!) ? livro : atual,
     );
   }
-
+    
   searchByTitulo(termo: string): Livro[] {
     const alvo = termo.toLowerCase();
 
